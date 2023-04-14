@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    font-size: 40px;
+}
+
+/* nie ma display: none dla tych co miało 
+    sie nie wyswietlac dla danej rozdzielczosci; */
+/* 
+blad, ma byc normlanie na czerowny - bazowo */
+@media (max-width: 359px) {
+
+    div {
+        background-color: red;
+    }
+}
+
+@media (min-width: 360px) {
+    div {
+        background-color: green;
+    }
+}
+
+@media (min-width: 640px) {
+    div {
+        background-color: blue;
+    }
+}
+
+@media (min-width :1024px) {
+    div {
+        background-color: grey;
+    }
+}
+
+@media (min-width:1400px) {
+    div {
+        font-size: 10px;
+        border: 10px solid blue;
+    }
+}

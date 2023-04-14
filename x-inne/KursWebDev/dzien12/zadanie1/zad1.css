@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    min-height: 300vh;
+}
+
+/* body {min-height: 300vh;} powinno byc ! */
+
+
+header {
+    height: 80vh;
+    background-image: url('city.jpg');
+    background-position: auto bottom 50%;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+h1 {
+    position: absolute;
+    bottom: 50px;
+    font-size: 80px;
+    min-height: 0;
+    /* bo przy * nadanie min a ma byc w body */
+    height: 80px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+section {
+    padding-top: 80px;
+    max-width: 80%;
+    line-height: 190%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 100px;
+}

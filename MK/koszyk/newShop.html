@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pipestorage</title>
+
+</head>
+<body>
+    <h1>Pipes</h1>
+    <section class="product-list">
+        <ul>
+            <li>DN200 - 560 zł/mb <button class="btn-pipe" data-name="dn200" data-price="560"> KUP </button></li>
+            <li>DN150 - 240 zł/mb <button class="btn-pipe" data-name="dn150" data-price="250"> kup </button></li>
+            <li>DN100 - 149 zł/mb <button class="btn-pipe" data-name="dn100" data-price="149"> kupse</button>
+            </li>
+        </ul>
+    </section>
+    <section class="order-list">
+        <h2>Kosz</h2>
+        <ul class="basket-list">
+        </ul>
+        <button class="btn-order" disabled>zamow</button>
+    </section>
+    <section>
+        <h1>Administrator</h1>
+        <form class="admin-form">
+            <input type="text" name='pipe-name' placeholder="pipe..">
+            <input type="number" name="pipe-price" placeholder="zł/mb..">
+            <button class="btn-add">dodaj</button>
+        </form>
+    </section>
+    <script src="newshop.js"></script>
+</body>
+</html>

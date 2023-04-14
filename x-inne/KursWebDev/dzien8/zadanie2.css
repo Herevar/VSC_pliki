@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 30vw;
+    background-color: rgb(220, 220, 220);
+}
+
+nav {
+    background-color: #666;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+ul {
+    padding: 30px 0;
+    max-width: 1024px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    margin-right: 30px;
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 10px;
+    width: 180px;
+    /*jak ma miec dokładnie 180 to border-box albo odejmowac od 180 paddingi bioredry itp */
+    text-align: center;
+
+}
+
+a:hover {
+    color: chartreuse;
+    border: 1px solid chartreuse;
+}
+

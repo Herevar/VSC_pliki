@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanie2</title>
+
+    <style>
+        p.italic {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: yellow;
+            background-color: black;
+            text-align: justify;
+        }
+
+        body>p,
+        p.italic+p {
+            margin: 50px;
+
+
+        }
+
+        p.italic+p {
+            font-style: italic;
+            text-align: center;
+        }
+
+        body p.italic,
+        html body p {
+            font-family: roboto, sans-serif;
+            /* ZLE, miało byc dziedziczenie wiec w html lub body powinno byc*/
+            height: auto;
+            width: 500px;
+            margin: 0 auto 0 auto;
+            /* zeby to zadziałało to musze usunac gdzie indziej marginesy*/
+            font-size: 1.5em;
+
+        }
+
+        p.italic:hover {
+            color: green;
+            background-color: grey;
+            text-decoration: underline;
+            line-height: 2em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+        eius quas voluptas nam delectus et? Odit dolorem corporis assumenda
+        necessitatibus, voluptatum rem et quae voluptate enim adipisci
+        voluptatem aliquam numquam.
+    </p>
+    <p class="italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+        debitis reprehenderit alias aperiam et nisi ducimus necessitatibus
+        hic vero laboriosam laborum veritatis, recusandae dolor commodi,
+        dolores eum magnam! Eveniet, quo.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Error iusto laborum nihil labore ducimus, ullam vitae corrupti unde
+        culpa aperiam commodi sunt quos et? Hic, eius. Vitae, recusandae!
+        Ipsam, aspernatur.
+    </p>
+
+</body>
+
+</html>

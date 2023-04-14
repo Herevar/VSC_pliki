@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    /* line-height: 120%; dobrz kombinowane, powinno być 100vh wtedy by była linia na cały ekran :V */
+
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5vh;
+    text-decoration: underline;
+    margin-top: 50vh;
+}

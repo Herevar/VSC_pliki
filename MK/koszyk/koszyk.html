@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>koszyk</title>
+</head>
+
+<body>
+    <h1>produkt</h1>
+    <section class='products' >
+      <ul class="product-list">
+        <li>
+          <strong>chleb</strong> - 3.30 zl <button class='btn-prod' data-name='bread' data-price='3.30'>kup</button>
+        </li>
+        <li>
+          <strong>masło</strong> - 4.50 zł <button class='btn-prod' data-name='butter' data-price='4.50'>kup</button>
+        </li>
+        <li>
+          <strong>mleko</strong> - 2.99 zł <button class='btn-prod' data-name='milk' data-price='2.99'>kup</button>
+        </li>
+    <!-- jesli jest jakis inny sposob przekazania danych:cena,nazwa i sposob na to to ok:P ale taki w lekcji tj. data-x='y' -->
+      </ul>
+    </section>  
+    <section class='fulfill'>
+      <h1>koszyk</h1>
+      <ul class="list-to-order">
+      </ul>
+      <button class="execute" disabled>zamów</button>
+    </section>
+    <!--   <scrpit src="JS"></scrpit> - jak to tu podpiąć ?jest z automatu -->
+
+    <section>
+      <h1>Administrator</h1> 
+      <form class="admin-form">
+        <input type="text" name='product-name' placeholder="Nazwe produktu...">
+        <input type="number" name='price-name' placeholder="cena...">
+        <button type="=submit">dodaj</button>
+      </form> 
+
+    </section>
+    <script src="koszyk.js"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+
+    background-color: #555;
+}
+
+ul {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 30px;
+    /* list-style: none; samo znikło? */
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+}
+
+a {
+    box-sizing: border-box;
+    display: block;
+    padding: 5px 30px;
+    margin: 0 20px;
+    font-size: 24px;
+    color: lightseagreen;
+    border: 2px solid lightseagreen;
+    text-decoration: none;
+    width: 180px
+}
+
+header {
+    width: 100px;
+    height: 100px;
+    background-image: url('jakiesmolo.jpg');
+    background-size: cover;
+}
+
+header:active {
+    background-color: black;
+    width: 75px;
+    height: 75px;
+    opacity: 0.5;
+}

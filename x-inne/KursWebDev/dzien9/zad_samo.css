@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: darkgreen;
+
+}
+
+ul {
+    margin: 0 auto;
+    width: 1024px;
+    list-style: none;
+
+}
+
+li {
+    width: 200px;
+    float: left;
+}
+
+a {
+    box-sizing: border-box;
+    display: block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 20px;
+    /* padding: 10px 10px; */
+    height: 40px;
+    line-height: 30px;
+    color: darkorange;
+    border: 5px solid darkorange;
+    text-align: center;
+    text-decoration: none;
+    background-color: darkred;
+}
+
+header {
+    height: 30vh;
+    width: auto;
+    background-image: url(kolobrzeg.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+article {
+    width: 80%;
+    height: 500px;
+    float: left;
+    background-color: darkorchid;
+
+}
+
+aside {
+    height: 20vw;
+    width: 20%;
+    float: left;
+    background-color: darkred;
+}
+
+/* .clear {
+    clear: both;
+} */
+
+.clearfix ::after {content : ""; 
+    display:block ; 
+    clear : both; }

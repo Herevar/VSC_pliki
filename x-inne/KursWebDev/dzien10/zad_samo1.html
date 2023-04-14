@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: black;
+        }
+
+        div {
+            height: 100px;
+            width: 20%;
+            background-color: green;
+            float: left;
+            margin: 2.5%;
+            border: 5px solid red;
+        }
+
+        nav {
+            background-color: darkslategrey;
+            width: 100%;
+            padding: 10px 30px;
+
+        }
+
+        nav ul {
+            max-width: 1024px;
+            list-style: none;
+            margin: 0 auto;
+            /*dopiero jak podamy wymiar to mozna srodkowac marginesem */
+
+        }
+
+        li {
+            float: left;
+            width: 20%;
+            ;
+
+        }
+
+        a {
+            display: block;
+            margin: 0 10px;
+            font-size: 26px;
+            text-decoration: none;
+            border: 2px solid darkorange;
+            color: darkorange;
+            text-align: center;
+            background-color: black
+        }
+
+
+
+        header div:nth-child(1):hover {
+            background-color: blue;
+
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <header class="clearfix">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </header>
+    <nav>
+        <ul class="clearfix">
+            <li><a href="#">guzik 1</a></li>
+            <li><a href="#">guzikkkkkkkk 2</a></li>
+            <li><a href="#">guzik 3</a></li>
+            <li><a href="#">guzik 4</a></li>
+        </ul>
+
+    </nav>
+
+</body>
+
+</html>

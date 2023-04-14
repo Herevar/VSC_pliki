@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    height: 80vh;
+    background-image: url("betonoza_1.jpg");
+    background-attachment: fixed;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+
+
+}
+
+header div.logo {
+    position: absolute;
+    background-color: white;
+    display: block;
+    left: 10%;
+    top: 10%;
+    width: 280px;
+    height: 110px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 12px;
+
+}
+
+header div.part_logo {
+    background-color: black;
+    padding: 10px 30px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 54px;
+    letter-spacing: -2px;
+
+}
+
+p:nth-child(1) {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+}
+
+p:nth-child(2) {
+    display: inline-block;
+    margin-left: -10px;
+    color: blue;
+    text-transform: uppercase;
+
+}
+
+header h1 {
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 44px;
+}
+
+header button {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0);
+    font-size: 34px;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid blue;
+
+}
+
+button:active {
+    bottom: 11.1%;
+    right: 10.5%;
+    /* top: 80%;
+    left: 79%; */
+    background-color: rgba(0, 0, 0, .8);
+    /* box-shadow: 0 0 12px 0 white; */
+    font-size: 32px;
+    border: 2px solid rgba(0, 0, 200, .8)
+}
+
+section {
+    background-color: blue;
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+    font-size: 24px;
+    border: none;
+}
+
+
+
+
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    div.logo {
+        width: 80%;
+        height: 110px;
+        margin: 10px auto;
+    }
+
+    button {
+
+        margin: 10px auto;
+        font-size: 24px;
+        width: 80%;
+        /* podanie wymiaru nadpisuje left,bottom etc ; zawsze */
+    }
+
+}

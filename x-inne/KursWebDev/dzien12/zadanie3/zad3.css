@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.game {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('kolko.png'), url('kolko.png'), url('krzyzyk.png'), url('plansza.png'), url('kolko.png');
+
+    background-repeat: no-repeat;
+    background-position: 49% 32%, 49% 68%, 49% 50%, 50% 50%;
+    background-size: 7% 14%, 7% 14%, 7% 14%, 30% 50%, 7% 14%;
+}

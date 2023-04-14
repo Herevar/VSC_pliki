@@ -1,0 +1,211 @@
+/* font-family: 'Saira Condensed', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #29a6dc;
+    position: relative;
+    height: 100vh;
+    max-width: 1920px;
+    overflow: hidden;
+    /* to rozwiazuje problem tego białego obszaru poza tłem - obraz wystaje po prostu */
+
+}
+
+header img {
+    
+    position: absolute;
+    height: 50%;
+    left: 10%;
+    bottom: 0;
+}
+
+header div {
+    z-index: 1;
+    margin: 20px auto;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 7%;
+    font-family: 'Saira Condensed', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+header h1 {
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+header button {
+    padding: 0px 25px;
+    line-height: 32px;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase
+
+}
+/* .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.feature {
+    padding: 10px;
+    float: left;
+    width: 33%;
+} */
+.feature {
+   margin: 5%;
+   padding: 5%;
+}
+
+.level_1 h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.level_1 img {
+    width: 100%;
+    /* width: 200px; */
+    /* height: 120px; */
+}
+.level_1 p:nth-child(2) {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.level_1 p:nth-child(3) {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.level_1 {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+@media (orientation : portrait) and (min-width: 360px) {
+    header h1 {
+        font-size: 44px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    header h3 {
+        font-size: 24px;
+    }
+
+    header button {
+        font-size: 14px;
+        padding: 5px 35px;
+    }
+}
+
+@media (orientation : portrait) and (min-width: 768px) {
+    header img {
+
+        height: 50%;
+        left: 32%;
+        bottom: 0;
+    }
+    header h1 {
+        font-size: 80px;
+    }
+
+    header h2 {
+        font-size: 44px;
+    }
+
+    header h3 {
+        font-size: 44px;
+        margin-bottom: 25px;
+    }
+
+    header button {
+        font-size: 44px;
+        padding: 25px 35px;
+    }
+
+}
+
+/* tu pewnie inne szerokosci ale to juz zabawa jak wyzej  */
+
+@media (orientation: landscape) and (min-width: 1024px) {
+
+    header img {
+
+        height: 95%;
+        left: 46%;
+        bottom: 0;
+    }
+    header div {
+
+        margin: 20px auto;
+        left: 9%;
+        right: 5%;
+        top: 7%;
+        text-align: left;
+       
+    }
+    header h1 {
+        font-size: 100px;
+
+    }
+
+    header h2 {
+        font-size: 50px;
+
+    }
+
+    header h3 {
+        font-size: 50px;
+
+    }
+    header button {
+        font-size: 36px;
+        padding: 10px 35px;
+        line-height: 60px;
+    }
+    
+}
+@media (orientation: landscape) and (min-width: 1280px) {
+    header img {
+
+        height: 95%;
+        left: 58%;
+        bottom: 0;
+    }
+
+
+}
+

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Roboto', sans-serif; */
+
+header {
+    height: 50vh;
+    width: 100vw;
+    background-image: url("molo2.jpg");
+    background-size: cover;
+    /* background-position: center; -> centruje orbazek*/
+}
+
+nav {
+    background-color: #333;
+    padding-left: 20px;
+    border-bottom: 4px solid royalblue;
+    text-align: center;
+}
+
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    /* czyli sie ten napis/guzik 'rozpycha' bo nie ma okreslonego wymiaru */
+
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover {
+    color: orange;
+
+    
+}

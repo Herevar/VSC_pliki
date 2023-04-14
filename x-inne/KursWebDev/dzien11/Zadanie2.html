@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D11z2</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    div.board {
+
+        left: 50px;
+        height: 400px;
+        top: 50px;
+        width: 400px;
+        border: 4px solid black;
+        position: relative;
+    }
+
+    span:nth-child(1) {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 50%;
+        width: 50%;
+        background-color: red;
+    }
+
+    span:nth-child(2) {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        height: 50%;
+        width: 50%;
+        background-color: green;
+        /* to sie powinno jakos razem, a te innej własnosci w soobnym selektorze) 8*/
+    }
+</style>
+
+
+
+<body>
+    <div class="board">
+        <span></span>
+        <span></span>
+    </div>
+</body>
+
+</html>
