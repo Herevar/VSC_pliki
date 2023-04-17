@@ -12,6 +12,7 @@ class TodoList  {
     }
 
     _validate(){
+        
         if (this.title.trim().length < 3){
             throw new Error("Task must contain description")
         }

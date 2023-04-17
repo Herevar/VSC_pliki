@@ -1,5 +1,6 @@
 <h1>wszystko z listy</h1>
 <ul class="todo_list">
+    
     {{#each tasks}}
         <li>
                 {{!-- <th> --}}
@@ -11,7 +12,7 @@
      {{/each}}
 
 </ul>
-<div>
+
     <form method="POST" action="/list">
         {{!-- <label>
             <p>
@@ -19,7 +20,9 @@
             </p>
             <p> --}}
                 <input type="text" name="task">
+                <input type="text" name="email">
             {{!-- </p>
+                
         </label>
         <label> --}}
             <button type="submit">zapisz</button>
@@ -27,5 +30,4 @@
      --}}
     </form>
 
-</div>
 

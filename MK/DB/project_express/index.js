@@ -6,6 +6,10 @@ const methodOverride = require('method-override')
 const app = express();
 
 app.use(methodOverride('_method'))
+app.use(express.urlencoded({                          
+  extends : true  
+}));
+
 
 app.engine(".hbs", hbs.engine({ 
     extname: ".hbs",  

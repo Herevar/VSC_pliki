@@ -13,22 +13,26 @@ listRouter
     })
 
     .get('/:id', async(req,res)=>{
+        console.log('get jest', req.body)
         const oneTask = await TodoList.find(req.params.id)
-        res.render('hbs_y/list_one.hbs', {
+        res.render('hbs_y/list_one', {
             oneTask
         })
     })
 
     // .delete()
 
-    .post('/', (req, res)=>{
-        console.log(req.body)
-        const task_id = new TodoList(req.body.task)
-        res.render('hbs_y/added.hbs',{
-            task_id
-        })
-        
+    .post('/', async(req,res)=>{
+        // console.log('post jest', req.body.task), ok
+        const task_id = new TodoList({title :req.body.task})
+        console.log(task_id)
+        // res.render('hbs_y/added',{
+        //     title : task_id
+        // })
     })
+
+
+
 
     
     // console.log('wynik all:',pickAll)
