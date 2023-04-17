@@ -1,12 +1,13 @@
-const { poolz } = require("../utils/db2");
-const {v4: uuid} = require('uuid');
 
-class TodoRecord  {
+const {v4: uuid} = require('uuid');
+const { poolOf } = require('./db2');
+
+class TodoList  {
     constructor(obj) {
         
         this.id = obj.id ;
         this.title = obj.task ;
-        
+
         this._validate()
     }
 
@@ -18,13 +19,13 @@ class TodoRecord  {
             throw new Error("to long task descripton; limit is 150 char")
         }
 
-        
+
     }
 
     async insert() {
         this.id = this.id ?? uuid();
 
-        await poolz.execute("INSERT INTO `todo` VALUES (:id, :title)", {
+        await poolOf.execute("INSERT INTO `todo` VALUES (:id, :title)", {
             id : this.id, 
             title: this.title
         
@@ -36,21 +37,21 @@ class TodoRecord  {
         if (!this.id){
             throw new Error("no such id in todo's")
         }
-        await poolz.execute(" DELETE FROM `todo` WHERE `id` = :id", {
+        await poolOf.execute(" DELETE FROM `todo` WHERE `id` = :id", {
             id : this.id,
         })
     }
     
-    static async find(id) { //podajemy z zewnatrz ( nie bierze pod uwage this. - chyba)
-        const [result] = await poolz.execute("SELECT * FROM `todo` WHERE `id` = :id", {
+    static async find(id) {
+        const [result] = await poolOf.execute("SELECT * FROM `todo` WHERE `id` = :id", {
             id: id
         })
-        return result.length === 1 ? new TodoRecord(result[0]) : null // TWORZYMY NOWA INSTACJE KLASE ZEBY TEGO UZYC / jezeli jest to zwracamy a jezeli nie ma (bo np w id podalismy byle co) to zwroci null
+        return result.length === 1 ? new TodoList(result[0]) : null // TWORZYMY NOWA INSTACJE KLASE ZEBY TEGO UZYC / jezeli jest to zwracamy a jezeli nie ma (bo np w id podalismy byle co) to zwroci null
     }
 
     static async findAll(){
         //..
-        const [all] = await poolz.execute("SELECT * FROM `todo`")
+        const [all] = await poolOf.execute("SELECT * FROM `todo`")
         return all 
     }
 
@@ -62,7 +63,7 @@ class TodoRecord  {
         
         this._validate()
 
-        await poolz.execute("UPDATE `todo` SET `task` = :title WHERE `id`= :id", {
+        await poolOf.execute("UPDATE `todo` SET `task` = :title WHERE `id`= :id", {
             title: this.title,
             id : this.id, 
         })
@@ -72,7 +73,7 @@ class TodoRecord  {
 }
 
 module.exports = {
-    TodoRecord,
+    TodoList,
 }
 
 

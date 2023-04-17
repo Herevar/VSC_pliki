@@ -6,7 +6,7 @@ const { poolz } = require("./utils/db2");
 (async()=> {
     const firstTodo = new TodoRecord( {
         // id: '123',
-        task: 'umyc zadek trolla',
+        // task: 'umyc zadek trolla',
 
     });
 
