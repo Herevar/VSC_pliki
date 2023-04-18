@@ -4,10 +4,10 @@ const { poolOf } = require('./db2');
 
 class TodoList  {
     constructor(obj) {
-        
+        console.log('obj->',obj)
         this.id = obj.id ;
         this.title = obj.task ;
-
+        console.log('this.title->',this.title)
         this._validate()
     }
 

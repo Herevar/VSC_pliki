@@ -2,32 +2,30 @@
 <ul class="todo_list">
     
     {{#each tasks}}
-        <li>
-                {{!-- <th> --}}
-                
+        <li>   
          <p>ID: {{this.id}}, ZADANIE: {{this.task}}</p>
-         {{!-- <form method="POST" action="/client/del/{{this.id}}?_method=DELETE">
+         
+         <form method="POST" action="/list/del/{{this.id}}?_method=DELETE">
                 <button type="submit">Usuń</button>
-        </form> --}}
+        </form>
      {{/each}}
 
 </ul>
 
     <form method="POST" action="/list">
-        {{!-- <label>
+        <label>
             <p>
                 Dodaj zadanie
             </p>
-            <p> --}}
+            <p>
                 <input type="text" name="task">
-                <input type="text" name="email">
-            {{!-- </p>
+            </p>
                 
         </label>
-        <label> --}}
+        <label>
             <button type="submit">zapisz</button>
-        {{!-- </label>
-     --}}
+        </label>
+    
     </form>
 
 

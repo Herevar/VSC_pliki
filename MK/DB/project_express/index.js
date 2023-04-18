@@ -28,4 +28,4 @@ app.use('/list', listRouter)
 
 
 
-app.listen(3015, 'localhost', ()=> {console.log("listening on localhost 3015")})
+app.listen(3000, 'localhost', ()=> {console.log("listening on localhost 3000")})

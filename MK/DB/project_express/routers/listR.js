@@ -13,23 +13,31 @@ listRouter
     })
 
     .get('/:id', async(req,res)=>{
-        console.log('get jest', req.body)
         const oneTask = await TodoList.find(req.params.id)
         res.render('hbs_y/list_one', {
             oneTask
         })
     })
 
-    // .delete()
+    .delete('/del/:id', async(req,res)=> {
+        const pickid = await TodoList.find(req.params.id)
+        if (pickid === null){
+            throw new Error("no such id in todo's")
+        }
+        else { 
+            await pickid.delete()
+            res.render('hbs_y/deleted')
+        }
+    })
 
     .post('/', async(req,res)=>{
-        // console.log('post jest', req.body.task), ok
-        const task_id = new TodoList({title :req.body.task})
-        console.log(task_id)
-        // res.render('hbs_y/added',{
-        //     title : task_id
-        // })
+        const task = new TodoList({task :req.body.task})
+        id = await task.insert()
+        res.render('hbs_y/added',{
+            id
+        })
     })
+   
 
 
 
