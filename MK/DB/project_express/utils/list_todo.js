@@ -11,7 +11,7 @@ class TodoList  {
         this._validate()
     }
 
-    _validate(){
+    _validate(){ // _ podkreslink ze to taka "wewnetrzna potrzeba" tylko
         
         if (this.title.trim().length < 3){
             throw new Error("Task must contain description")

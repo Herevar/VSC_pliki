@@ -41,13 +41,6 @@ listRouter
 
 
 
-
-    
-    // console.log('wynik all:',pickAll)
-
-    // await poolOf.end();
-
-
 module.exports = {
     listRouter
 }
