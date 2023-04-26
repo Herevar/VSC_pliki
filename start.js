@@ -4,7 +4,7 @@ console.log('działa')
 //ctrl + D  ; zaznacz kolejne takie same
 
 //npm install uuid
-// npm i mysql2
+//npm i mysql2
 
 
 // "dependencies": {

@@ -36,7 +36,7 @@ class TodoRecord  {
         if (!this.id){
             throw new Error("no such id in todo's")
         }
-        await poolz.execute(" DELETE FROM `todo` WHERE `id` = :id", {
+        await poolz.execute("DELETE FROM `todo` WHERE `id` = :id", {
             id : this.id,
         })
     }
