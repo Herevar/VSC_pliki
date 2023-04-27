@@ -13,7 +13,7 @@ const mysql = require('mysql2/promise');
 
     //const [result] = await conn.execute("SELECT * FROM `cars`"); //destrukturyzacja [pierwszy, drugi] ; drugi element to sa jakies tam rozne elementy pol
     const result = await conn.execute("INSERT INTO `cars` VALUES ('WOT 5T56T', 'Toyota', 'Corolla', '1998-02-12' ,'oragne', '999','1998-02-12') ")
-    
+    //asd
     
     console.log(result);
 })();
