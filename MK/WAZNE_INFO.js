@@ -18,21 +18,6 @@
   // ale callback wraca do przypisanej zmiennej przy 'await' i tam pozniej dalej sie go gdzes uzywa
 // bo stare implementacje były kiedy nie było async...await, wiec tem wszystkim metoda/funckja z bibliotek trzeba dac opcje promisowania, bo zmieniajac stare metody sie wysypie cos
 
-//-----------------------------------------------------------------
-
-
-//do kazdego projektu:
-// npm init -y instaluje i tworzy package json
-// npm i -D eslint babel-eslint eslint-config-airbnb 
-// to powzyej doinstalowywje paczki do package json , D-skrot development/dependecies , 3 narzedzia; eslint, babel i airbnb, 
-//-y -> doyslne ustawienia instaluje; bez tego trzeba odpowiedziec za akzdym razem co podac/wpisac
-
-//-----------------------------------------------------------------
-
-
-// npm WARN deprecated babel-eslint@10.1.0: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
-
-//-----------------------------------------------------------------
 
 //-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
 
